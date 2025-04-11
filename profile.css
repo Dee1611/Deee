@@ -1,0 +1,400 @@
+/* Hero Section Styles */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0 40px;
+}
+
+/* Text Content Styles */
+.text-content {
+  color: #ffffff;
+  padding: 20px;
+}
+
+.greeting {
+  color: #f8f9fa;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.nickname {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.nickname span {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Typing Animation */
+.typing-container {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  min-height: 40px;
+}
+
+.typing-text::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Profile Image Styles */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-wrapper {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  background: linear-gradient(135deg, #ffffff, #0c0c0c, #ffffff);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: running-glow 3s linear infinite;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-display {
+  height: 390px;
+  width: 390px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-display img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@keyframes running-glow {
+  0% {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5),
+                0 0 60px 20px rgba(255, 0, 0, 0.5);
+  }
+  25% {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5),
+                0 0 60px 20px rgba(0, 255, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5),
+                0 0 60px 20px rgba(0, 0, 255, 0.5);
+  }
+  75% {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5),
+                0 0 60px 20px rgba(200, 200, 200, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5),
+                0 0 60px 20px rgba(52, 50, 50, 0.5);
+  }
+}
+
+/* Social Icons Styles */
+.social-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.icon-content {
+  position: relative;
+}
+
+.icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -25px;
+}
+
+.icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  color: #4d4d4d;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+}
+
+.icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-content a:hover .filled {
+  height: 100%;
+}
+
+.icon-content a[data-social="Facebook"] .filled,
+.icon-content a[data-social="Facebook"] ~ .tooltip {
+  background-color: #1877F2;
+}
+
+.icon-content a[data-social="Gmail"] .filled,
+.icon-content a[data-social="Gmail"] ~ .tooltip {
+  background-color: #c4bebe;
+}
+
+.icon-content a[data-social="Github"] .filled,
+.icon-content a[data-social="Github"] ~ .tooltip {
+  background-color: #000000;
+}
+
+.icon-content a[data-social="telegram"] .filled,
+.icon-content a[data-social="telegram"] ~ .tooltip {
+  background-color: #0088cc;
+}
+
+/* Footer Styles */
+footer {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px 0;
+  position: relative;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .profile-wrapper {
+    height: 350px;
+    width: 350px;
+  }
+  
+  .profile-display {
+    height: 340px;
+    width: 340px;
+  }
+  
+  .greeting {
+    font-size: 2rem;
+  }
+  
+  .name {
+    font-size: 2.5rem;
+  }
+  
+  .nickname {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 90px 0 30px;
+  }
+  
+  .text-content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .social-container {
+    justify-content: center;
+  }
+  
+  .profile-wrapper {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .profile-display {
+    height: 290px;
+    width: 290px;
+  }
+}
+
+@media (max-width: 768px) {
+  .greeting {
+    font-size: 1.8rem;
+  }
+  
+  .name {
+    font-size: 2.2rem;
+  }
+  
+  .nickname {
+    font-size: 1.4rem;
+  }
+  
+  .typing-container {
+    font-size: 1.3rem;
+  }
+  
+  .profile-wrapper {
+    height: 280px;
+    width: 280px;
+  }
+  
+  .profile-display {
+    height: 270px;
+    width: 270px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 80px 0 20px;
+  }
+  
+  .greeting {
+    font-size: 1.6rem;
+  }
+  
+  .name {
+    font-size: 2rem;
+  }
+  
+  .nickname {
+    font-size: 1.3rem;
+  }
+  
+  .typing-container {
+    font-size: 1.1rem;
+    min-height: 30px;
+  }
+  
+  .profile-wrapper {
+    height: 250px;
+    width: 250px;
+  }
+  
+  .profile-display {
+    height: 240px;
+    width: 240px;
+  }
+  
+  .icon-content a {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .icon-content a svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .greeting {
+    font-size: 1.4rem;
+  }
+  
+  .name {
+    font-size: 1.8rem;
+  }
+  
+  .nickname {
+    font-size: 1.2rem;
+  }
+  
+  .typing-container {
+    font-size: 1rem;
+  }
+  
+  .profile-wrapper {
+    height: 220px;
+    width: 220px;
+  }
+  
+  .profile-display {
+    height: 210px;
+    width: 210px;
+  }
+  
+  .icon-content a {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon-content a svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .profile-wrapper {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .profile-display {
+    height: 190px;
+    width: 190px;
+  }
+  
+  .icon-content a {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .icon-content a svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .icon-content .tooltip {
+    font-size: 12px;
+  }
+}

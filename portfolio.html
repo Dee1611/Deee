@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dee - Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <label class="logo">My Portfolio</label>
+    <ul>
+      <li><a class="active" href="portfolio.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="por.html">Projects</a></li>
+      <li><a href="blog.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-lg-6 text-content">
+          <h2 class="greeting animate__animated animate__bounceInDown">Hello! It's me</h2>
+          <h1 class="name animate__animated animate__lightSpeedInLeft">Aung Ko Ko Min</h1>
+          <h3 class="nickname animate__animated animate__lightSpeedInRight">
+            You can call me <span>Dee</span>
+          </h3>
+          <div class="typing-container">
+            <span class="typing-text" id="text"></span>
+          </div>
+          
+          <!-- Social Icons -->
+          <div class="social-container animate__animated animate__bounceInUp">
+            <!-- Facebook -->
+            <div class="icon-content">
+              <a href="https://www.facebook.com/aung.ko.ko.min.396632?mibextid=ZbWKwL" 
+                 aria-label="Facebook" 
+                 data-social="Facebook">
+                <div class="filled"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+              </a>
+              <div class="tooltip">Facebook</div>
+            </div>
+            
+            <!-- Email -->
+            <div class="icon-content">
+              <a href="mailto:aungkokomin112003@gmail.com" 
+                 aria-label="Gmail" 
+                 data-social="Gmail">
+                <div class="filled"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+              </a>
+              <div class="tooltip">Email</div>
+            </div>
+            
+            <!-- GitHub -->
+            <div class="icon-content">
+              <a href="https://github.com/Dee1611" 
+                 aria-label="Github" 
+                 data-social="Github">
+                <div class="filled"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+              </a>
+              <div class="tooltip">Github</div>
+            </div>
+            
+            <!-- Telegram -->
+            <div class="icon-content">
+              <a href="https://t.me/dArcyX16" 
+                 aria-label="Telegram" 
+                 data-social="telegram">
+                <div class="filled"></div>
+                <svg version="1.1" viewBox="0 0 100 100">
+                  <path d="M95,9.9c-1.3-1.1-3.4-1.2-7-0.1c0,0,0,0,0,0c-2.5,0.8-24.7,9.2-44.3,17.3c-17.6,7.3-31.9,13.7-33.6,14.5  c-1.9,0.6-6,2.4-6.2,5.2c-0.1,1.8,1.4,3.4,4.3,4.7c3.1,1.6,16.8,6.2,19.7,7.1c1,3.4,6.9,23.3,7.2,24.5c0.4,1.8,1.6,2.8,2.2,3.2  c0.1,0.1,0.3,0.3,0.5,0.4c0.3,0.2,0.7,0.3,1.2,0.3c0.7,0,1.5-0.3,2.2-0.8c3.7-3,10.1-9.7,11.9-11.6c7.9,6.2,16.5,13.1,17.3,13.9  c0,0,0.1,0.1,0.1,0.1c1.9,1.6,3.9,2.5,5.7,2.5c0.6,0,1.2-0.1,1.8-0.3c2.1-0.7,3.6-2.7,4.1-5.4c0-0.1,0.1-0.5,0.3-1.2  c3.4-14.8,6.1-27.8,8.3-38.7c2.1-10.7,3.8-21.2,4.8-26.8c0.2-1.4,0.4-2.5,0.5-3.2C96.3,13.5,96.5,11.2,95,9.9z M30,58.3l47.7-31.6  c0.1-0.1,0.3-0.2,0.4-0.3c0,0,0,0,0,0c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2-0.1c-0.1,0.1-0.2,0.4-0.4,0.6L66,38.1  c-8.4,7.7-19.4,17.8-26.7,24.4c0,0,0,0,0,0.1c0,0-0.1,0.1-0.1,0.1c0,0,0,0.1-0.1,0.1c0,0.1,0,0.1-0.1,0.2c0,0,0,0.1,0,0.1  c0,0,0,0,0,0.1c-0.5,5.6-1.4,15.2-1.8,19.5c0,0,0,0,0-0.1C36.8,81.4,31.2,62.3,30,58.3z" fill="currentColor"></path>
+                </svg>
+              </a>
+              <div class="tooltip">Telegram</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Profile Image -->
+        <div class="col-lg-6 profile-container">
+          <div class="profile-wrapper">
+            <div class="profile-display">
+              <img src="images/me1.jpg" alt="Aung Ko Ko Min - Web Developer">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-light py-3">
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script>
+    const texts = ["I'm a Web Developer", "Front-End Developer", "Software Engineering Student"];
+    const typingSpeed = 100;
+    const erasingSpeed = 60;
+    const delayBetweenTexts = 1500;
+
+    let textIndex = 0;
+    let charIndex = 0;
+    const textElement = document.getElementById("text");
+
+    function type() {
+      if (charIndex < texts[textIndex].length) {
+        textElement.textContent += texts[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+      } else {
+        setTimeout(erase, delayBetweenTexts);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        textElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingSpeed);
+      } else {
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(type, typingSpeed);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(type, delayBetweenTexts);
+    });
+  </script>
+</body>
+</html>
